@@ -49,11 +49,14 @@ function power() {
             result *= base;
         }
         result = 1 / result;
-    } else if (base===0) {
+    } else if (base===0 && exp===0) {
         result = NaN;
     }
-    else {
+    else if base===0 {
         result = 1;
+    }
+    else {
+        result = NaN
     }
 
     show(result);
