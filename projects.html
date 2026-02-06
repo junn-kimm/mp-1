@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A website showcasing Jun Kim's Online Resume">
+    <link type="text/css" rel="stylesheet" href="resume.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Home | Resume</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Jun Kim</h1>
+            <p>My Online Resume</p>
+        </header>
+        <div id="nav-main">
+            <nav>
+                <ul>
+                    <li><a href="resume.html">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="employment.html">Employment</a></li>
+                    <li><a href="achievement.html">Achievements</a></li>
+                    <li><a href="references.html">References</a></li>
+                    <li><a href="documents.html">Documents</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+            <main id="main">
+                <h3>Projects</h3>
+                <div id="side-desc">
+                    <img src="lidartestbench.jpeg" alt="Lidar Testbench">
+                    <p>
+                    <br><br>
+                    Developed a ROS2-based LiDAR data collection system using Raspberry Pi and Jetson hardware in collaboration with Hyundai Motors.
+                    </p>
+                </div>
+                <div id="bottom-p">
+                    <h4>JavaScript Calculator</h4>
+                    <br><br>
+
+                    <div class="calc-inputs">
+                        <input type="text" id="first-number" placeholder="First number">
+                        <input type="text" id="second-number" placeholder="Second number">
+                    </div>
+
+                    <div class="calc-buttons">
+                        <button type="button" onclick="addition()">+</button>
+                        <button type="button" onclick="subtraction()">-</button>
+                        <button type="button" onclick="multiplication()">*</button>
+                        <button type="button" onclick="division()">/</button>
+                        <button type="button" onclick="power()">**</button>
+                        <button type="button" onclick="clearAll()">Clear</button>
+                    </div>
+
+                    <h3 id="output">—</h3>
+                </div>
+                <script src="calculator.js"></script>
+            </main>
+        </div>
+        <footer>
+            <div id="time-date">2/6/2026</div>
+        </footer>
+    </div>
+</body>
+
+</html>
