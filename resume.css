@@ -8,8 +8,8 @@ body{
 }
 
 #wrapper{
-    width: 75vw; //page width
-    margin: 0 auto; //center wrapper; DO NOT CHANGE
+    width: 75vw;
+    margin: 0 auto;
 }
 
 header{
@@ -39,11 +39,12 @@ nav li{
     width: 82%;
     background-color: #1f5fa8;
     padding: 3%;
-    margin: 10% auto; //DO NOT CHANGE
+    margin: 10% auto;
     text-align: center;
 }
 
 nav a{
+    text-decoration: none;
     font-size: calc(2px + 1.3vw);
     color: #f2f8ff;
 }
@@ -57,8 +58,8 @@ main{
 }
 
 #side-desc{
-    display: flex; //use flexbox layout to make image and content side by side
-    flex-direction: row; //side by side for above
+    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
@@ -67,7 +68,7 @@ main{
 
 main p{
     line-height: 130%;
-    font-size: calc(2px + 2vw); //dynamic text size based on screen size
+    font-size: calc(2px + 2vw);
     padding: 2%;
     color: #102a4d;
 }
@@ -80,7 +81,7 @@ main h3{
 }
 
 main img{
-    max-width: 40%; //limit size so the image is still on the left of content
+    max-width: 40%;
 }
 
 footer{
@@ -114,7 +115,7 @@ footer a{
 #bottom-p h4{
   text-align: center;
   margin-bottom: 14px;
-  font-size: calc(18px + 0.6vw); //text size based on view
+  font-size: calc(18px + 0.6vw);
   color: #1f2a44;
 }
 
@@ -122,25 +123,25 @@ footer a{
   width: 48%;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid rgba(0,0,0,0.18); //super light 1px border to give outline of box
+  border: 1px solid rgba(0,0,0,0.18);
   background: rgba(255,255,255,0.95);
-  font-size: calc(14px + 0.2vw); //text size based on view
+  font-size: calc(14px + 0.2vw);
 }
 
 .calc-buttons{
   display: flex;
-  flex-wrap: wrap; //move buttons to next line if no space
+  flex-wrap: wrap;
   justify-content: center;
   margin: 14px;
 }
 
 #output{
-  display: block; //output behaves like a block and doesn't 
-  margin: 0 auto; //DO NOT CHANGE
+  display: block;
+  margin: 0 auto;
   padding: 12px;
   border-radius: 12px;
   background: rgba(255,255,255,0.9);
-  font-size: calc(20px + 0.7vw); //text size based on view
+  font-size: calc(20px + 0.7vw);
   color: #1f2a44;
   width: 100px;
   text-align: center;
@@ -152,8 +153,9 @@ footer a{
   border-radius: 12px;
   border: 1px solid rgba(0,0,0,0.15);
   background: #ffffff;
-  font-size: calc(14px + 0.2vw); //text size based on view
-  font-weight: 700; //make the text bold
+  font-size: calc(14px + 0.2vw);
+  font-weight: 700;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1000px) {
